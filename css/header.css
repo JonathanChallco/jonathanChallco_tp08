@@ -2,7 +2,6 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: black;
     color: white;
     font-family: "Courier Prime", monospace;
     list-style: none;
@@ -20,10 +19,14 @@ header{
     align-items: center;
     justify-content: space-between;
     z-index: 100;
+    transition: all 0.8s ease;
     .logo{
         font-size: 30px;
         font-weight: 800;
     }
+}
+header:hover{
+    background-color: rgba(22, 21, 21, 0.315);
 }
 /*------ MENU----- */
 #menu-icon{
