@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Challco</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/><!--ICONOS-->
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/banner.css">
+    <link rel="stylesheet" href="/css/portfolio.css">
+    <link rel="stylesheet" href="/css/contact.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">SCR</a>
+        <!-- Truco de boton clickeable sin usar JS -->
+        <input type="checkbox" name="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon-action">
+            <div>
+                <i class="ri-menu-fold-4-line" id="menu-icon"></i>
+            </div>
+        </label>
+        <section class="section-menu">
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Sobre mí</a></li>
+                <li><a href="#contactame">Contacto</a></li>
+            </ul>
+        </section>
+    </header>
+    <main>
+        <div class="box-txt-img">
+            <section class="box-txt">
+                <h4>Hola soy </h4>
+                <h1>Jonathan Arnaldo Challco</h1>
+                <p>Estudiante en CoderHouse gracias a una Beca a travéz de la asociacion Formar, futuro developer Full Stack. </p>
+                <section class="cv-proyects">
+                    <a href="/assets/CV/Cv-JonathanChallco.pdf" download="cvJonathanChallco" target="_blank">CV</a>
+                    <a href="#mi-portfolio">PORTAFOLIO</a>
+                </section>
+                <ul class="redes">
+                    <li>
+                        <a class="git" href="http://github.com/JonathanChallco" target="_blank">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="insta" href="http://www.instagram.com/challcojonathan" target="_blank" >
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="fb" href="https://www.facebook.com/jonathan.challco.7?mibextid=LQQJ4d" target="_blank">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="box-img">
+                <img id="img-perfil" src="/assets/img/file.png" alt="img">
+            </section>
+        </div>
+        <div class="portfolio">
+            <h2 id="mi-portfolio">PORTAFOLIO</h2>
+            <ul>
+                <li>
+                    <h3>Diapositiva</h3>
+                    <div>
+                        <img src="/assets/img/figma.webp" alt="img">
+                    </div>
+                    <p>Maquetacion de pagina web con Figma</p>
+                </li>
+                <li>
+                    <h3>Maquetacion web</h3>
+                    <div>
+                        <img src="/assets/img/Mercado Liebre.webp" alt="img">
+                    </div>
+                    <p>Maquetacion de pagina web con en base a MercadoLibre (Descktop-tablet-mobile)</p>
+                </li>
+            </ul>
+        </div>
+        <div class="contact">
+            <article >
+                <h2 id="contactame">Contacto</h2>
+                <form>
+                    <!-- <label for="name">Nombre</label> -->
+                    <input type="text" id="name" placeholder="Nombre" />
+                    <!-- <label for="email">E-mail</label> -->
+                    <input type="email" id="email" placeholder="E-mail" />
+                    <input type="number" id="number" placeholder="Telefono" />
+                    <h3>Motivo</h3>
+                    <div>
+                        <section class="motivo">
+                            <input type="checkbox" name="social" value="Social">
+                            <label for="jugueteria">Social</label>
+                        </section>
+                        <section class="motivo">
+                            <input type="checkbox" name="laboral" value="Laboral">
+                            <label for="jugueteria">Laboral</label>
+                        </section>
+                    </div>
+                    <!-- <label for="message">Mensaje</label> -->
+                    <textarea placeholder=" Indique su mensaje"></textarea>
+                    <button type="submit">ENVIAR</button>
+                </form>
+            </article>
+        </div>
+    </main>
+</body>
+</html>

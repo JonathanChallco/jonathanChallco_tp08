@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: "Courier Prime", monospace;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    margin: 2vh;
+}
+
+/* Columnas del main */
+/* main{
+} */
+.box-txt-img{
+    margin-top:1vh;
+    margin-bottom: 1vh;
+    min-height: 550px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 2vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    /* Caja de texto */
+    .box-txt{
+        h4{
+            font-size: 15px;
+        }
+        h1{
+            font-size: 40px;
+        }
+        p{
+            margin-top: 30px;
+            font-size: 15px;
+        }
+        /* CV - Proyectos */
+        .cv-proyects{
+            padding-bottom: 50px;
+            margin-top: 50px;
+            padding-left: 50px;
+            a{
+                display: inline-block;
+                background-color: #4d4d4d;
+                border: 1px solid white;
+                padding: 15px 30px;
+                line-height: 1.4;
+                font-size: 14px;
+                font-weight: 500;
+                border-radius: 30px;
+                text-transform: uppercase;
+                transition: all .5s ease;
+            }
+            a:hover{
+                background-color: transparent;
+                transform: translateX(8px);
+            }
+        }
+        /* redes */
+        .redes{
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+            li{
+                a{
+                    font-size: 3.5rem;
+                }
+            }
+            /* Transicion de color a los logos */
+            .git:hover{
+                i{
+                    color: rgb(82, 75, 75);
+                    transition: all 0.8s ease;
+                }
+            }
+            .insta:hover{
+                i{
+                    background: linear-gradient(to right, #833AB4, #FD1D1D, #FCB045);
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    transition: background 5s ease-in-out;
+                    /* No logro la transicion correcta */
+                }
+            }
+            .fb:hover{
+                i{
+                    color: #3b5998;
+                    transition: all 0.8s ease;
+                }
+            }
+        }
+    }
+    /* Caja de Imagen */
+    .box-img{
+        border: none;
+        text-align: center;
+        img{
+            border: 1px solid white;
+            border-radius: 100%;
+            width: 400px;
+            height: auto;
+            transition: all 5s linear;
+        }
+        img:hover{
+            width: 450px;
+            opacity: 0.6;
+        }
+    }
+}
+/*mobile*/
+@media(max-width:767px){
+    .box-txt-img{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #img-perfil{
+        width: 300px;
+        transition: none;
+    }
+
+}
