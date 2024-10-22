@@ -93,6 +93,12 @@ body{
                     transition: all 0.8s ease;
                 }
             }
+            .ld:hover{
+                i{
+                    color: #007bb6;
+                    transition: all 0.8s ease;
+                }
+            }
         }
     }
     /* Caja de Imagen */
@@ -125,5 +131,4 @@ body{
         width: 300px;
         transition: none;
     }
-
 }
