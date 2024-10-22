@@ -2,13 +2,13 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: black;
     color: white;
     font-family: "Courier Prime", monospace;
     list-style: none;
     text-decoration: none;
 }
 body{
+    background: linear-gradient(245.59deg, #3a3d3d 0%, #81878a 25%, #332e2e 75%);
     margin: 2vh;
 }
 .portfolio{
@@ -17,6 +17,7 @@ body{
     border: 1px solid white;
     border-radius: 20px;
     padding: 2vh;
+    transition: all 0.8s ease;
     h2{
         padding-bottom: 15px;
     }
@@ -43,4 +44,7 @@ body{
             }
         }
     }
+}
+.portfolio:hover{
+    background-color: rgba(22, 21, 21, 0.315);
 }

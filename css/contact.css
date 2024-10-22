@@ -2,7 +2,6 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: black;
     color: white;
     font-family: "Courier Prime", monospace;
     list-style: none;
@@ -16,6 +15,7 @@ body{
     margin-bottom: 1vh;
     border: 1px solid white;
     border-radius: 20px;
+    transition: all 0.8s ease;
     article{
         margin: 20px;
         h2{
@@ -68,4 +68,7 @@ body{
             text-transform: uppercase;
         }
     }
+}
+.contact:hover{
+    background-color: rgba(22, 21, 21, 0.315);
 }

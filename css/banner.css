@@ -2,7 +2,6 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: black;
     color: white;
     font-family: "Courier Prime", monospace;
     list-style: none;
@@ -15,7 +14,7 @@ body{
 /* Columnas del main */
 /* main{
 } */
-.box-txt-img{
+.box-txt-img{ 
     margin-top:1vh;
     margin-bottom: 1vh;
     min-height: 550px;
@@ -26,6 +25,8 @@ body{
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 2rem;
+    transition: all 0.8s ease;
+
     /* Caja de texto */
     .box-txt{
         h4{
@@ -92,6 +93,12 @@ body{
                     transition: all 0.8s ease;
                 }
             }
+            .ld:hover{
+                i{
+                    color: #007bb6;
+                    transition: all 0.8s ease;
+                }
+            }
         }
     }
     /* Caja de Imagen */
@@ -111,6 +118,9 @@ body{
         }
     }
 }
+.box-txt-img:hover{
+    background-color: rgba(22, 21, 21, 0.315);
+}
 /*mobile*/
 @media(max-width:767px){
     .box-txt-img{
@@ -121,5 +131,4 @@ body{
         width: 300px;
         transition: none;
     }
-
 }
